@@ -1,0 +1,209 @@
+<!-- 
+Team Name: Enginerds
+
+Memebers:
+	Mohammad Al-Rammah
+	Damien Rittmann
+	Lingyin Lu
+	Allison Roney
+	Xinyu Jiang
+	Jiacheng Shao
+
+Purpose of page:
+- To clarify the intent of our service 
+- if user already has account, then they just enter email and password
+- else, page redirects user to a different page (in the form of a forum)
+ -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta lang="english">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>QuickCast Home</title>
+	<link href="my_style.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div id="container2">
+				<div class="thirdwidth">
+					<img src="https://via.placeholder.com/100x100" alt="placeholder" align="left">
+				</div>
+				<div class="thirdwidth">
+					<br>
+					<p class="text_header1" align="center">
+						Home
+					</p>
+				</div>
+				<div class="thirdwidth">
+					<br>
+					<br>
+					<p class="text_header2" align="center">
+						About Us &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Favorites &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Profile &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; History
+					</p>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="big_picture">
+			<img src="../img/home_pic3.jpg" alt="placeholder">
+			<div class="centered">
+				<p class="text_title">QuickCast</p>
+				<p class="text_pic">QuickCast is a search engine that aims to provide people around the world whom have busy, dynamic, and perhaps non-lenient schedules with podcasts that are time and content relevent.</p>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div id="container2">
+				<div class="thirdwidth" align="center">
+					<div class="dropdown">
+					    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Time
+					    <span class="caret"></span></button>
+					    <ul class="dropdown-menu">
+					      <li><a href="#"> 5-10 min</a></li>
+					      <li><a href="#"> 10-25 min</a></li>
+					      <li><a href="#"> 30+ min</a></li>
+					    </ul>
+					  </div>
+				</div>
+
+				<div class="thirdwidth" align="center">
+					<div class="dropdown">
+					    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Genre
+					    <span class="caret"></span></button>
+					    <ul class="dropdown-menu">
+					      <li><a href="#"> Sports </a></li>
+					      <li><a href="#"> Politics </a></li>
+					      <li><a href="#"> Health </a></li>
+					      <li><a href="#"> Design and Architecture </a></li>
+					    </ul>
+					  </div>
+				</div>
+
+				<div class="thirdwidth" align="center">
+					<div class="search-container">
+    				<form action="/action_page.php">
+      					<input onclick() = "searchAPI()" type="text" placeholder="QuickCast search..." name="search">
+      					<button type="submit"><i class="fa fa-search"></i></button>
+    				</form>
+  					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="recommend_box">
+			<p class="text_recom1"> Recommendations </p>
+
+			<p class="text_recom2"> &lt; 5 min </p>
+			<ul class="text_recom3">
+				<li>item1</li>
+				<li>item2</li>
+				<li>item3</li>
+			</ul>
+
+			<p class="text_recom2"> 5-10 min </p>
+			<ul class="text_recom3">
+				<li>item1</li>
+				<li>item2</li>
+				<li>item3</li>
+			</ul>
+
+			<p class="text_recom2"> 10-25 min </p>
+			<ul class="text_recom3">
+				<li>item1</li>
+				<li>item2</li>
+				<li>item3</li>
+			</ul>
+
+			<p class="text_recom2"> 30+ min </p>
+			<ul class="text_recom3">
+				<li>item1</li>
+				<li>item2</li>
+				<li>item3</li>
+			</ul>
+
+		</div>
+
+		<footer>
+			<p class="text_footer1">The creators</p>
+			<div class="footer_row">
+					<div class="inline-block">
+						<img class= "rounded-circle" src="../img/Mohammad_pic.gif" alt="A picture of me sitting down at New York's Brooklyn Bridge Park" width="150" height="150" hspace="50">
+						<p class="text_footer2">Mohammad Al-Rammah</p>
+					</div>
+
+					<div class="inline-block">
+						<img class= "rounded-circle" src="../img/Mohammad_pic.gif" alt="A picture of me sitting down at New York's Brooklyn Bridge Park" width="150" height="150" hspace="80">
+						<p class="text_footer2">Mohammad Al-Rammah</p>
+					</div>
+
+					<div class="inline-block">
+						<img class= "rounded-circle" src="../img/Mohammad_pic.gif" alt="A picture of me sitting down at New York's Brooklyn Bridge Park" width="150" height="150" hspace="80">
+						<p class="text_footer2">Mohammad Al-Rammah</p>
+					</div>
+			</div>
+			<br>
+			<br>
+				<div class="footer_row">
+					<div class="inline-block">
+						<img class= "rounded-circle" src="../img/Mohammad_pic.gif" alt="A picture of me sitting down at New York's Brooklyn Bridge Park" width="150" height="150" hspace="50">
+						<p class="text_footer2">Mohammad Al-Rammah</p>
+					</div>
+
+					<div class="inline-block">
+						<img class= "rounded-circle" src="../img/Mohammad_pic.gif" alt="A picture of me sitting down at New York's Brooklyn Bridge Park" width="150" height="150" hspace="80">
+						<p class="text_footer2">Mohammad Al-Rammah</p>
+					</div>
+
+					<div class="inline-block">
+						<img class= "rounded-circle" src="../img/Mohammad_pic.gif" alt="A picture of me sitting down at New York's Brooklyn Bridge Park" width="150" height="150" hspace="80">
+						<p class="text_footer2">Mohammad Al-Rammah</p>
+					</div>
+			</div>
+		</footer>
+
+	</div>
+	<script>
+			function searchAPI()
+			{
+		
+				var url ='https://itunes.apple.com/search?term=dog&entity=podcast';
+				$.ajax({url:url, dataType:"jsonp"}).then(function(data) 
+				{
+					console.log(data);//Review all of the data returned
+					$("#target").attr("src",data.results[0].artworkUrl600);
+					var strA = "<a href='" + data.results[0].collectionViewUrl + "'></a>";
+	             	$("#target").wrapAll(strA);
+				})
+			}
+
+
+	</script>
+</body>
+
+</html>
+
+

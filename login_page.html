@@ -1,0 +1,71 @@
+<!-- 
+Team Name: Enginerds
+
+Memebers:
+	Mohammad Al-Rammah
+	Damien Rittmann
+	Lingyin Lu
+	Allison Roney
+	Xinyu Jiang
+	Jiacheng Shao
+
+Purpose of page:
+- To take information from user
+- if user already has account, then they just enter email and password
+- else, page redirects user to a different page (in the form of a forum)
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta lang="english">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-------------------------Bootstrap------------------------------->
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>login</title>
+</head>
+<body background="../img/micPodPic.jpg">
+	<div class="center text-center">
+		<form class="form-signin">
+			<!-- I left src empty b/c we don't have our logo yet -->
+	  		<img class="rounded-circle" src="" alt="" width="72" height="72">
+
+			<h1 id = "header">Please sign in</h1>
+
+				<label for="uname"></label>
+				<input type="text" placeholder="Email address" name="uname" required>
+				<br>
+
+				<label for="psw"></label>
+				<input type="text" placeholder="Password" name="psw" required>
+				<br>
+
+				<label>
+		 			 <input type="checkbox" value="remember-me"> Remember me | 
+				</label>
+				<!-- href is empty b/c this field is unimportant to our project at the moment, but we will come to it later -->
+				<a href="">Forgot Password?</a><br>
+
+	  			<button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+	  			<a class="btn btn-lg btn-primary" href="register_page.html">Register</a>
+		 		<p class="mt-5 mb-3 text-muted">&copy; 2019</p>
+		</form>
+	</div>
+</body>
+</html>

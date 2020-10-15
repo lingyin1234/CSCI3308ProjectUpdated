@@ -1,0 +1,105 @@
+<!-- 
+Team Name: Enginerds
+
+Memebers:
+	Mohammad Al-Rammah
+	Damien Rittmann
+	Lingyin Lu
+	Allison Roney
+	Xinyu Jiang
+	Jiacheng Shao
+
+Purpose of page:
+- To take information from user
+- if user already has account, then they just enter email and password
+- else, page redirects user to a different page (in the form of a forum)
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta lang="english">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="../resources/css/my_style.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<title>login</title>
+</head>
+<body>
+	<div class="bg">
+	<div class="center text-center">
+		<form class="form-signin" action="/register" method="post" >
+			<!-- I left src empty b/c we don't have our logo yet -->
+	  		<img class="rounded-circle" src="" alt="" width="72" height="72">
+
+			<h1 id = "header" ><font color="white">The QuickCast community is excited to have you!</h1></font>
+
+			<!-- <form > -->
+			<br>
+				<!-- <label for="fname"></label> -->
+				<input type="text" placeholder="First name" for="first_name" id="firstName" name="fname" required>
+				<br>
+
+				<!-- <label for="lname"></label> -->
+				<input type="text" placeholder="Last name" for="last_name" id="lastName" name="lname" required>
+				<br>
+
+				<!-- <label for="emailid"></label> -->
+				<input type="text" placeholder="Email address" for="email_address" id="emailAddress" name="email_id" required>
+				<br>
+
+				<!-- <label for="psw"></label> -->
+				<input type="text" placeholder="Password" for="password" name="psw" id="userPassword" required>
+				<br>
+
+				<!-- <label for="cnfpsw"></label> -->
+				<input type="text" placeholder="Confirm password" for="password" name="cnfpsw" required>
+				<br>
+			<!-- </form> -->
+
+
+				<label>
+		 			 <input type="checkbox" value="remember-me"> Remember me
+				</label>	
+				<br>
+
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+
+
+
+
+
+
+		 		<p class="mt-5 mb-3 text-muted">&copy; 2019</p>
+		</form>
+	</div>
+	<!--
+	<script>
+		function submitForm() {
+			const firstName=document.getElementById("firstName").value;
+			const lastName=document.getElementById("lastName").value;
+			const emailAddress=document.getElementById("emailAddress").value;
+			const userPassword=document.getElementById("userPassword").value;
+			insert into users (email,name,password) values (emailAddress,firstName+lastName,userPassword);
+		}
+	</script>
+	-->
+</div>
+</body>
+</html>

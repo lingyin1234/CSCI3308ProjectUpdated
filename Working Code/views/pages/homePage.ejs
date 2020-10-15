@@ -1,0 +1,111 @@
+<!-- 
+Team Name: Enginerds
+
+Memebers:
+	Mohammad Al-Rammah
+	Damien Rittmann
+	Lingyin Lu
+	Allison Roney
+	Xinyu Jiang
+	Jiacheng Shao
+
+Purpose of page:
+- To clarify the intent of our service 
+- if user already has account, then they just enter email and password
+- else, page redirects user to a different page (in the form of a forum)
+ -->
+
+
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <meta charset="utf-8">
+     <meta lang="english">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>FastCast Home</title>
+	 <!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../resources/my_style.css">
+ </head>
+ <body>
+
+    <div class="bg">
+      
+     
+         <header class="main_head">
+		<div class = 'searchMethod'>
+				<form id="search">
+					<input type="text" name="searchterm" id="query">
+					<input type="submit">
+	
+	       
+				</form>
+			</div>
+	
+			<div class='returnedPods'>
+                
+            </div>
+            <h3 class="head3"></h3> 
+             <p class="par"> QuickCast is a podcast search engine app that quickly connects you to your favorite podcasts.</p>
+        
+         <h3 class="head3">The creators of FastCast</h3>
+             <p class="par">Because we respect your time, we have dedicated countless hours perfecting a service we know you will not only enjoy but one that you will appreciate beyond any quantifiable measure. Although our brand might be strictly, and mistakenly, categorized as entertainment, we encourage our users to think of FastCast as a lifestyle app; one that will augment your day-to-day life with convenience.</p>
+ 
+             <div class="halfwidth" style="grid-row-start: 5">
+            <ul id="creators">
+                <li> Mohammad Rammah</li>
+                <li> Damean Rittmann</li>
+                <li> Lingyin Lu </li>
+            </ul>
+        </div>
+
+        <div class="halfwidth" style="grid-row-start: 5">
+            <ul id="creators">
+                <li> Allison Roney</li>
+                <li> Xinyu Jiang</li>
+                <li> Jiacheng Shao</li>
+            </ul>
+        </div>
+ 
+         <footer class="foot">
+             <!-- opens users' email app -->
+             <address><a href="mailto: fastcast@gmail.com">Email</a> our team at FastCast for any inquiries</address>
+             <!-- refers user to FAQs page -->
+             <span><a href="">FAQs</a></span>
+             <br>
+             <!-- Share buttons -->
+             <button>Twitter</button>
+             <button>Facebook</button>
+             <button>email</button>
+             <button>LinkedIn</button>
+ 
+         </footer>
+ 
+	 </div>
+	 <script>
+			//addEventLsitener listens for submit in the form when clicked
+			//but we dont want it (the page) to reload so thats why we use preventDefault (for efficiency)
+			
+			var searchForm = document.querySelector("#search");
+			searchForm.addEventListener('submit', function(event){
+				event.preventDefault();
+				var query = $("#query").val();
+				var url ='https://itunes.apple.com/search?term='+query+'&entity=podcast'; //Place your DarkSky API Call Here 
+				var resultsDiv = $(".returnedPods")
+				resultsDiv.empty()
+				$.ajax({url:url, dataType:"jsonp"}).then(function(data) {
+                    for(var i = 0; i< 15; i++)
+                    {
+                        var pic = data.results[i].artworkUrl60;
+                        var link = data.results[i].collectionViewUrl;
+                        var piclink = "<a href='"+link+"'> <img src='"+pic+"'</img></a>"
+                        resultsDiv.append(piclink);
+                    }
+
+				})
+			})
+				
+		</script>
+ </body>
+ </html>

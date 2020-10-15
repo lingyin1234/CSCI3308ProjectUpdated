@@ -1,0 +1,47 @@
+<!-- 
+Team Name: Enginerds
+
+Memebers:
+	Mohammad Al-Rammah
+	Damien Rittmann
+	Lingyin Lu
+	Allison Roney
+	Xinyu Jiang
+	Jiacheng Shao
+
+Purpose of page:
+- To take information from user
+- if user already has account, then they just enter email and password
+- else, page redirects user to a different page (in the form of a forum)
+ -->
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" href="css/index.css" />
+		
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="bidTitle"></div>
+			<div class="logCon">
+				<br></br>
+				<form action="/login" method="POST">
+				
+					<label for="inputEmail" class="sr-only">Email address</label>
+					<input name = 'email' type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+					<label for="inputPassword" class="sr-only">Password</label>
+					<input name = 'password' type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+					<br></br>
+				  	<button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+				</form>
+				
+			</div>
+		</div>
+	</body>
+
+</html>

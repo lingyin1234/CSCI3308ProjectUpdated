@@ -1,0 +1,126 @@
+
+#container{
+	width:100%; /*The container will try to fill the entire browser window width*/
+	margin:0px; /*This line of code is the key.  0px margin top and bottom, auto margin left and right to center*/
+	background-color:rgb(38,120,127);
+	padding:0px;
+
+  	display: grid;
+ 	grid-template-columns: repeat(12, 8.333%); /* same as above*/
+}
+
+.thirdwidth{
+	background-color: rgb(20,20,20);
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	grid-column-end: span 4;
+}
+
+.fullwidth{
+	background-color:rgb(177,251,255);
+	margin:10px;
+	padding:0px;
+	box-sizing:border-box;
+	grid-column-end: span 12;
+}
+
+.fullwidth2{
+	background-color:rgb(20,20,20);
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	grid-column-end: span 12;
+}
+
+.halfwidth{
+	background-color:rgb(20,20,20);
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	grid-column-end: span 6;
+}
+
+.result_box{
+	background-color:rgb(177,251,255);
+	margin:10px;
+	padding:10px;
+	box-sizing:border-box;
+	text-align:left; /*left, right, center, justify*/
+	grid-column-end: span 12;
+}
+
+.text_header1{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(250,250,250);
+	font-size: 2em;
+}
+
+.big_picture{
+	background-color:rgb(38,120,127);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding:0px;
+	box-sizing:border-box;
+	text-align:center; /*left, right, center, justify*/
+	grid-column-end: span 12; /*row start, column start, row end, column end*/
+}
+
+#creators{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(250,250,250);
+	font-size: 1em;
+}
+
+.text_footer2{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(250,250,250);
+	font-size: 1em;
+}
+
+.centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered_bottom {
+  position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text_title{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(255,255,255);
+	font-size: 6em;
+}
+
+.text_recom1{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(0,0,0);
+	font-size: 3em;
+}
+
+.text_recom3{
+	font-family: 'Roboto', sans-serif;
+	color: rgb(0,0,0);
+	font-size: 2em;
+}
+
+a:visited{
+	color: rgb(177,251,255);
+}
+
+a:link{
+	color: rgb(38,120,127);
+}
+.bg{
+	background-image: url("../img/registerBackground.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
